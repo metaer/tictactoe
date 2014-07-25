@@ -1,9 +1,9 @@
 package ru.pavelpopovjava.tictactoe;
 
-class OccupiedCellException extends InvalidTurnException {
+class OccupiedCellException extends InvalidUserTurnException {
 
     public String getMessage(){
-        return "Ячейка уже занята";
+        return "Ячейка уже занята. Укажите другую ячейку";
     }
 
 }

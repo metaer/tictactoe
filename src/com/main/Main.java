@@ -1,9 +1,16 @@
-package ru.pavelpopovjava.tictactoe;
+package com.main;
 
-import java.util.Scanner;
+import ru.pavelpopovjava.tictactoe.Game;
 
+/**
+ * Главный класс
+ */
 public class Main {
 
+    /**
+     * Точка входа
+     * @param args
+     */
     public static void main(String[] args) {
 
         //Создаем игру
@@ -14,7 +21,7 @@ public class Main {
 
         game.play();
 
-        //Заканчиваем: выводим имя победителя.
+        //Заканчиваем: выводим имя победителя (либо сообщение о ничье)
         game.finish();
 
     }
